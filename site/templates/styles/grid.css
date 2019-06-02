@@ -1,0 +1,162 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+#grid_container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 480px 240px 320px;
+      grid-template-rows: 480px 240px 320px;
+      grid-template-areas: "hero hero hero hero" "one two two three" "four four five six";
+}
+
+@media screen and (max-width: 1000px) {
+  #grid_container {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 480px 240px 320px 320px;
+        grid-template-rows: 480px 240px 320px 320px;
+        grid-template-areas: "hero hero hero hero" "one two two three" "four four four four" "five five six six";
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #grid_container {
+    display: none;
+  }
+}
+
+#hero_mobile {
+  display: none;
+  height: 480px;
+  width: 100%;
+  background-image: url("/mobile_background.jpg");
+  background-size: cover;
+  background-position: center center;
+}
+
+@media screen and (max-width: 600px) {
+  #hero_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+#hero {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: hero;
+  height: 100%;
+  background-image: url("/hero.jpg");
+  background-size: cover;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  #hero {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+  }
+}
+
+#hero .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 480px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+#one {
+  background-image: url("/one.jpg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: one;
+}
+
+#two {
+  background-image: url("/two.jpg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: two;
+  position: relative;
+}
+
+#two .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 240px;
+}
+
+#three {
+  background-image: url("/three.jpg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: three;
+}
+
+#four {
+  background-image: url("/four.jpg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: four;
+}
+
+#five {
+  background-image: url("/five.jpg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: five;
+}
+
+#six {
+  background-image: url("/six.jpg");
+  background-size: cover;
+  background-position: center;
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: six;
+}
+/*# sourceMappingURL=grid.css.map */

@@ -1,0 +1,4 @@
+2019-06-02 14:11:49	admin	http://localhost/	Parse Error: 	syntax error, unexpected '$heroItem' (T_VARIABLE), expecting ',' or ';' (line 30 of C:\xampp\htdocs\site\templates\home-page.php)
+2019-06-02 14:13:04	admin	http://localhost/	Parse Error: 	syntax error, unexpected '$heroItem' (T_VARIABLE), expecting ',' or ';' (line 30 of C:\xampp\htdocs\site\templates\home-page.php)
+2019-06-02 14:57:08	guest	http://localhost/	Parse Error: 	syntax error, unexpected '$imageURL' (T_VARIABLE), expecting ',' or ';' (line 48 of C:\xampp\htdocs\site\templates\home-page.php)
+2019-06-02 14:57:11	guest	http://localhost/	Parse Error: 	syntax error, unexpected '$imageURL' (T_VARIABLE), expecting ',' or ';' (line 48 of C:\xampp\htdocs\site\templates\home-page.php)
