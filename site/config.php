@@ -38,7 +38,7 @@ if(!defined("PROCESSWIRE")) die();
  * @var bool
  *
  */
-$config->debug = false;
+$config->debug = true;
 
 
 /*** INSTALLER CONFIG ********************************************************************/
@@ -104,5 +104,5 @@ $config->installed = 1559495537;
  * Installer: HTTP Hosts Whitelist
  * 
  */
-$config->httpHosts = array('localhost', 'cordmedia-timlentz.herokuapp.com');
+$config->httpHosts = array('cordmedia-timlentz.herokuapp.com', 'localhost');
 
