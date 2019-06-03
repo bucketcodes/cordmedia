@@ -48,10 +48,19 @@ $config->debug = false;
  * Installer: Database Configuration
  * 
  */
-$config->dbHost = 'localhost';
-$config->dbName = 'cord';
-$config->dbUser = 'root';
-$config->dbPass = '';
+
+//Get Heroku ClearDB connection information
+$cleardb_url      = parse_url(getenv("CLEARDB_DATABASE_URL"));
+$cleardb_server   = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db       = substr($cleardb_url["path"],1);
+
+
+$config->dbHost = $cleardb_url;
+$config->dbName = $cleardb_db;
+$config->dbUser = $cleardb_username;
+$config->dbPass = $cleardb_password;
 $config->dbPort = '3306';
 
 /**
