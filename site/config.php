@@ -104,5 +104,5 @@ $config->installed = 1559495537;
  * Installer: HTTP Hosts Whitelist
  * 
  */
-$config->httpHosts = array('localhost');
+$config->httpHosts = array('localhost', 'cordmedia-timlentz.herokuapp.com');
 
