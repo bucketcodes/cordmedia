@@ -57,10 +57,10 @@ $cleardb_password = $cleardb_url["pass"];
 $cleardb_db       = substr($cleardb_url["path"],1);
 
 
-$config->dbHost = $cleardb_url;
-$config->dbName = $cleardb_db;
-$config->dbUser = $cleardb_username;
-$config->dbPass = $cleardb_password;
+$config->dbHost = "us-cdbr-iron-east-02.cleardb.net";
+$config->dbName = "heroku_4b634f323245d51";
+$config->dbUser = "b897f61a7c3df3";
+$config->dbPass = "9b22a769";
 $config->dbPort = '3306';
 
 /**
